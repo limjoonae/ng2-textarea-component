@@ -3,9 +3,11 @@
 ## Documentation ##
 text area ใช้ในการรับค่าและแสดงผลข้อความ
 
+
 ## Syntax ##
 ###### [ ] = optional attribute ######
 `<gos-textarea id="textarea_id" name="textarea_name" [label="label_name"] [row="row_num"][require="true_or_false"] [disable="true_or_false"] [readonly="true_or_false"] [maxlength="number"] [defaultValue="text"] [colorTheme="text"]></ gos-textarea>`
+
 
 ## Attributes ##
 
@@ -22,7 +24,8 @@ Require | Attribute   | Type        | Description
         |defaultValue | *text*      | ใช้กำหนดข้อความที่ต้องการแสดงใน text area
         |colorTheme   | *text*      | ใช้กำหนดสีของ text area โดยค่าที่สามารถระบุได้ ประกอบด้วย success=สีเขียว, info=สีฟ้า, warning=สีส้ม, danger=สีแดง
 
-## Getting started ##
+
+## Usage ##
 app.module.ts - ทำการ import และกำหนดค่าเพิ่มเติมใน declarations
     
     import { CustomDisabledDirective, CustomReadonlyDirective, CustomMaxlengthDirective  } from './directive/index';
@@ -40,3 +43,8 @@ app.module.ts - ทำการ import และกำหนดค่าเพ�
       ..........
      ],
 
+
+### Example ###
+app.component.html - เรียกใช้ component ในไฟล์ html และกำหนดค่า attribute ต่างๆ ดังตัวอย่างด้านล่าง
+
+    <gos-textarea label="Disable Text Area" id="textarea_1" name="textarea_1" disable="true" defaultValue="I have a pen" disable="true" colorTheme="success"></gos-textarea>
