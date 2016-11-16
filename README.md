@@ -4,6 +4,7 @@
 text area ใช้ในการรับค่าและแสดงผลข้อความ
 
 ## Syntax ##
+###### [ ] = optional attribute ######
 `<gos-textarea id="textarea_id" name="textarea_name" [label="label_name"] [row="row_num"][require="true_or_false"] [disable="true_or_false"] [readonly="true_or_false"] [maxlength="number"] [defaultValue="text"] [colorTheme="text"]></ gos-textarea>`
 
 ## Attributes ##
