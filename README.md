@@ -20,3 +20,22 @@ Require | Attribute   | Type        | Description
         |maxlength    | *number*    | ใช้กำหนดความยาวตัวอักษรสูงสุดที่สามารถพิมพ์ได้ใน text area หากไม่ระบุจะมีค่า = 524288 ตัวอักษร
         |defaultValue | *text*      | ใช้กำหนดข้อความที่ต้องการแสดงใน text area
         |colorTheme   | *text*      | ใช้กำหนดสีของ text area โดยค่าที่สามารถระบุได้ ประกอบด้วย success=สีเขียว, info=สีฟ้า, warning=สีส้ม, danger=สีแดง
+
+## Getting started ##
+app.module.ts - ทำการ import และกำหนดค่าเพิ่มเติมใน declarations
+    
+    import { CustomDisabledDirective, CustomReadonlyDirective, CustomMaxlengthDirective  } from './directive/index';
+    import { LabelComponent } from './label/index';
+    import { TextareaComponent } from './textarea/index';
+
+    @NgModule({
+     declarations: [
+      ..........
+      CustomDisabledDirective,
+      CustomReadonlyDirective,
+      CustomMaxlengthDirective,
+      LabelComponent,
+      TextareaComponent,
+      ..........
+     ],
+
