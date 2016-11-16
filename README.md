@@ -3,6 +3,9 @@
 ## Documentation ##
 text area ใช้ในการรับค่าและแสดงผลข้อความ
 
+## Prerequisite ##
+* [Custom directive](https://github.com/limjoonae/ng2-textarea-component/tree/master/directive)
+* [Select color service](https://github.com/limjoonae/ng2-textarea-component/tree/master/service)
 
 ## Syntax ##
 ###### [ ] = optional attribute ######
