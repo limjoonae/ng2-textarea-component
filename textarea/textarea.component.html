@@ -1,12 +1,9 @@
-  <!--<div class="container">-->
-    <div class="form-group">
-      <app-label [label]="label" [require]="require"></app-label>
-      <div>
-        <textarea class="form-control {{colorClass}}"
-              [id]="id" 
-              [name]="name"
-              [rows]="rowReturn"
-        >{{defaultValue}}</textarea>
-      </div>
-    </div>
-  <!--</div>-->
+<!--<div class="container">-->
+<div class="form-group">
+	<app-label [label]="label" [require]="require"></app-label>
+	<div>
+		<textarea class="form-control {{colorClass}}" [id]="id" [name]="name" [rows]="rowReturn" [customDisabled]="disable" [customReadonly]="readonly"
+			[customMaxlength]="maxlength">{{defaultValue}}</textarea>
+	</div>
+</div>
+<!--</div>-->
