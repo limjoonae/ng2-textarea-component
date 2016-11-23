@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   defaultText = "Web App";
+
+  onClick(){
+    alert('test send Event!!!');
+  }
 }

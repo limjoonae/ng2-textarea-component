@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CustomDisabledDirective, CustomReadonlyDirective, CustomMaxlengthDirective  } from './directive/index';
 import { LabelComponent } from './label/index';
 import { TextareaComponent } from './textarea/index';
+import { TextboxComponent } from './textbox/index';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { TextareaComponent } from './textarea/index';
     CustomMaxlengthDirective,
     LabelComponent,
     TextareaComponent,
+    TextboxComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
