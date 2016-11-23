@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SelectColorThemeService } from '../service/select-color-theme.service';
+import { BootstrapClassService } from '../service/bootstrap-class.service';
 
 @Component({
   selector: 'gos-textarea',
   templateUrl: './textarea.component.html',
   styles: [],
-  providers: [ SelectColorThemeService ] 
+  providers: [ BootstrapClassService ] 
 })
 export class TextareaComponent implements OnInit {
 
@@ -23,10 +23,10 @@ export class TextareaComponent implements OnInit {
   private colorClass: string;
   private _colorClassPrefix = 'alert alert-';
 
-  constructor(private _selectColorThemeService: SelectColorThemeService) { }
+  constructor(private _bootstrapClassService: BootstrapClassService) { }
 
   ngOnInit() {
-    this.colorClass = this._selectColorThemeService.getColorTheme(this._colorClassPrefix, this.colorTheme);
+    this.colorClass = this._bootstrapClassService.setColorTheme(this._colorClassPrefix, this.colorTheme);
     this.rowReturn = this.returnRow(this.row);
 }
 
